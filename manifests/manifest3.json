@@ -1,0 +1,96 @@
+{
+  "@context" : "http://iiif.io/api/presentation/2/context.json",
+  "@id" : "https://lucyclark90.github.io/StaticFilesAPI/manifests/manifest3.json",
+  "@type" : "sc:Manifest",
+  "label" : "Shipley Park image",
+  "metadata" : [ {
+    "label" : "Notes",
+    "value" : "Photographers own image"
+  } ],
+  "description" : [ {
+    "@value" : "Black and white image of a bench overlooking Shipley Park, Derbyshire",
+    "@language" : "en"
+  } ],
+  "viewingHint" : "individuals",
+  "license" : "https://creativecommons.org/licenses/by/3.0/",
+  "attribution" : "Lucy Witts",
+  "sequences" : [ {
+    "@id" : "http://badb6e01-8c49-4d34-9929-cfd15cba867f",
+    "@type" : "sc:Sequence",
+    "label" : [ {
+      "@value" : "Normal Sequence",
+      "@language" : "en"
+    } ],
+    "canvases" : [ {
+      "@id" : "http://e0e32d98-dcf6-4929-86af-cd14be8a3f53",
+      "@type" : "sc:Canvas",
+      "label" : "Empty canvas",
+      "height" : 4000,
+      "width" : 6000,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://e38912da-0b19-48c5-820a-7e93da97cea6",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "http://127.0.0.1:8887/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "http://127.0.0.1:8887",
+            "profile" : "http://iiif.io/api/image/2/level0.json"
+          },
+          "height" : 4000,
+          "width" : 6000
+        },
+        "on" : "http://e0e32d98-dcf6-4929-86af-cd14be8a3f53"
+      } ],
+      "related" : ""
+    }, {
+      "@id" : "http://051f1df2-4b4a-497d-a4a6-d462137e4363",
+      "@type" : "sc:Canvas",
+      "label" : "Empty canvas",
+      "height" : 2244,
+      "width" : 2690,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://6a1fc042-a137-4821-a156-54657c3e4f1a",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://api.bl.uk/image/iiif/ark:/81055/vdc_100051654200.0x000034/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://api.bl.uk/image/iiif/ark:/81055/vdc_100051654200.0x000034",
+            "profile" : [ "http://iiif.io/api/image/2/level2.json", {
+              "qualities" : [ "gray", "color", "bitonal" ],
+              "supports" : [ "rotationArbitrary", "mirroring", "regionSquare", "profileLinkHeader" ]
+            } ]
+          },
+          "height" : 2244,
+          "width" : 2690
+        },
+        "on" : "http://051f1df2-4b4a-497d-a4a6-d462137e4363"
+      } ],
+      "related" : ""
+    } ]
+  } ],
+  "structures" : [ {
+    "@id" : "http://example.org/iiif/book1/range/r0",
+    "@type" : "sc:Range",
+    "label" : "Table of Contents",
+    "members" : [ {
+      "@id" : "http://example.org/iiif/book1/range/r1",
+      "@type" : "sc:Range",
+      "label" : "Introduction"
+    } ]
+  }, {
+    "@id" : "http://example.org/iiif/book1/range/r1",
+    "@type" : "sc:Range",
+    "label" : "Introduction",
+    "canvases" : [ "http://e0e32d98-dcf6-4929-86af-cd14be8a3f53" ]
+  } ]
+}
