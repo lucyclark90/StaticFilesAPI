@@ -9,9 +9,5 @@
     "@type" : "sc:Manifest",
     "@id" : "https://lucyclark90.github.io/StaticFilesAPI/manifests/manifest2.json",
     "label" : "Set of test images for manifest creation"
-  }, {
-    "@type" : "sc:Manifest",
-    "@id" : "https://lucyclark90.github.io/StaticFilesAPI/manifests/manifest3.json",
-    "label" : "Shipley Park image"
   } ]
 }
